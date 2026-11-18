@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veda Hair Studio</title>
+<meta name="description" content="Veda Hair Studio: considered cutting and colour in a calm space. Book an appointment online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Manrope:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site" id="top">
+  <a class="logo" href="#top" aria-label="Veda Hair Studio, home">VEDA</a>
+  <nav id="nav" aria-label="Main">
+    <a href="#studio">Studio</a>
+    <a href="#services">Services</a>
+    <a href="#find">Find us</a>
+    <a class="btn small nav-book" href="#book">Book appointment</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <figure class="ph hero-ph" data-label="Add your photo: images/hero.jpg">
+      <img src="images/hero.png" alt="Portrait of a client with a finished cut and colour" onerror="this.parentNode.classList.add('missing');this.remove()">
+    </figure>
+    <div class="hero-text">
+      <p class="eyebrow">Hair studio</p>
+      <h1 id="hero-title">Hair,<br>considered.</h1>
+      <p class="hero-sub">Cutting and colour, shaped around how you live. Unhurried appointments in a quiet studio.</p>
+      <a class="btn" href="#book">Book appointment</a>
+    </div>
+  </section>
+
+  <!-- STUDIO -->
+  <section class="split reveal" id="studio" aria-labelledby="studio-title">
+    <div class="split-text">
+      <p class="eyebrow">The studio</p>
+      <h2 id="studio-title">A calm space for considered cutting and colour.</h2>
+      <p>Every visit starts with a conversation about your hair, your routine and what you want it to do. Then we take the time to get it right.</p>
+      <p>Small studio, one client at a time, and a cut that still looks good six weeks later.</p>
+      <dl class="facts">
+        <div><dt>1:1</dt><dd>Appointments</dd></div>
+        <div><dt>60+</dt><dd>Minutes per visit</dd></div>
+        <div><dt>6 wk</dt><dd>Cut that holds</dd></div>
+      </dl>
+    </div>
+    <figure class="ph tall" data-label="Add your photo: images/studio.jpg">
+      <img src="images/studio.jpg" alt="Inside the studio" loading="lazy" onerror="this.parentNode.classList.add('missing');this.remove()">
+    </figure>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services reveal" id="services" aria-labelledby="services-title">
+    <div class="services-head">
+      <h2 id="services-title">Services &amp; Pricing</h2>
+      <p class="note">Prices are a guide and are confirmed at your consultation.</p>
+      <div class="tabs" role="tablist" aria-label="Service groups">
+        <button class="tab" role="tab" id="tab-cut" aria-controls="panel-cut" aria-selected="true" type="button">Cut &amp; style</button>
+        <button class="tab" role="tab" id="tab-colour" aria-controls="panel-colour" aria-selected="false" tabindex="-1" type="button">Colour</button>
+        <button class="tab" role="tab" id="tab-care" aria-controls="panel-care" aria-selected="false" tabindex="-1" type="button">Treatments</button>
+      </div>
+    </div>
+
+    <div class="price-lists">
+      <div class="panel" role="tabpanel" id="panel-cut" aria-labelledby="tab-cut">
+        <ul class="prices">
+          <li><div><h3>Signature cut</h3><p>Consultation, wash, cut and finish.</p></div><span class="time">60 min</span><span class="amt">Rs 3,500</span></li>
+          <li><div><h3>Restyle consultation &amp; cut</h3><p>A full change of shape, planned with you.</p></div><span class="time">90 min</span><span class="amt">Rs 5,000</span></li>
+          <li><div><h3>Blow-dry &amp; finish</h3><p>Smooth, waved or straight.</p></div><span class="time">45 min</span><span class="amt">Rs 2,000</span></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-colour" aria-labelledby="tab-colour" hidden>
+        <ul class="prices">
+          <li><div><h3>Hand-painted balayage</h3><p>Soft, natural lift with a gloss to finish.</p></div><span class="time">3 hr</span><span class="amt">from Rs 18,000</span></li>
+          <li><div><h3>Full colour</h3><p>One shade, root to end.</p></div><span class="time">2 hr</span><span class="amt">Rs 9,000</span></li>
+          <li><div><h3>Gloss &amp; tone</h3><p>Refresh shine and cancel brassiness.</p></div><span class="time">90 min</span><span class="amt">Rs 7,000</span></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-care" aria-labelledby="tab-care" hidden>
+        <ul class="prices">
+          <li><div><h3>Deep conditioning</h3><p>Repair and moisture for dry or coloured hair.</p></div><span class="time">45 min</span><span class="amt">Rs 3,000</span></li>
+          <li><div><h3>Keratin smoothing</h3><p>Frizz control that lasts for months.</p></div><span class="time">3 hr</span><span class="amt">Rs 20,000</span></li>
+          <li><div><h3>Scalp ritual</h3><p>Massage, exfoliation and a rinse.</p></div><span class="time">30 min</span><span class="amt">Rs 2,500</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="book reveal" id="book" aria-labelledby="book-title">
+    <div class="book-copy">
+      <h2 id="book-title">Book an appointment</h2>
+      <p>Choose a service and a time that suits you. We will confirm your booking by message.</p>
+      <form id="bookForm" novalidate>
+        <div class="row">
+          <label for="bName">Name<input id="bName" name="name" autocomplete="name" required></label>
+          <label for="bPhone">Phone<input id="bPhone" name="phone" type="tel" autocomplete="tel" required></label>
+        </div>
+        <label for="bService">Service
+          <select id="bService" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Signature cut</option>
+            <option>Restyle consultation &amp; cut</option>
+            <option>Blow-dry &amp; finish</option>
+            <option>Hand-painted balayage</option>
+            <option>Full colour</option>
+            <option>Gloss &amp; tone</option>
+            <option>Deep conditioning</option>
+            <option>Keratin smoothing</option>
+            <option>Scalp ritual</option>
+          </select>
+        </label>
+        <div class="row">
+          <label for="bDate">Date<input id="bDate" name="date" type="date" required></label>
+          <label for="bTime">Time
+            <select id="bTime" name="time" required>
+              <option value="">Choose a time</option>
+              <option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option>
+              <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+            </select>
+          </label>
+        </div>
+        <button class="btn" type="submit">Request appointment</button>
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+    <figure class="ph portrait" data-label="Add your photo: images/book.jpg">
+      <img src="images/book.jpg" alt="Client with an updo" loading="lazy" onerror="this.parentNode.classList.add('missing');this.remove()">
+    </figure>
+  </section>
+
+  <!-- FIND US -->
+  <section class="find reveal" id="find" aria-labelledby="find-title">
+    <figure class="ph wide" data-label="Add your photo: images/find.jpg">
+      <img src="images/find.jpg" alt="The studio entrance" loading="lazy" onerror="this.parentNode.classList.add('missing');this.remove()">
+    </figure>
+    <div class="find-info">
+      <h2 id="find-title">Find us</h2>
+      <p class="studio-name">Veda Hair Studio</p>
+      <address>
+        Near Ali Resturent<br>
+        Quitta, 9807<br>
+        0123456789 · name@gmail.com
+      </address>
+      <table class="hours">
+        <caption class="sr">Opening hours</caption>
+        <tbody>
+          <tr><th scope="row">Monday to Friday</th><td>10:00 – 19:00</td></tr>
+          <tr><th scope="row">Saturday</th><td>10:00 – 18:00</td></tr>
+          <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <a class="logo" href="#top">VEDA</a>
+  <p>Hair studio. Considered cutting and colour.</p>
+  <p class="fine">Veda Hair Studio is a sample site. Prices, hours and contact details are placeholders.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
